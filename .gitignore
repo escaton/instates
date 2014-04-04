@@ -3,6 +3,7 @@ vendors/*
 
 desktop.bundles/*/*
 !desktop.bundles/*/*.bemjson.js
+!desktop.bundles/*/_*
 
 .enb/tmp/*
 
