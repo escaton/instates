@@ -20,4 +20,7 @@ clean::
 build::
 	$(BIN)/enb make
 
-.PHONY: deps release-www clean build
+server::
+	$(BIN)/enb server
+
+.PHONY: deps release-www clean build server

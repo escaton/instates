@@ -3,24 +3,24 @@ module.exports = function(config) {
     config.mode("development", function() {
         config.node("desktop.bundles/index", function(nodeConfig) {
             nodeConfig.addTechs([
-                [ require("enb/techs/file-copy"), { sourceTarget: "?.js", destTarget: "_?.js" } ],
-                [ require("enb/techs/file-copy"), { sourceTarget: "?.css", destTarget: "_?.css" } ],
-                [ require("enb/techs/file-copy"), { sourceTarget: "?.ie6.css", destTarget: "_?.ie6.css" } ],
-                [ require("enb/techs/file-copy"), { sourceTarget: "?.ie7.css", destTarget: "_?.ie7.css" } ],
-                [ require("enb/techs/file-copy"), { sourceTarget: "?.ie8.css", destTarget: "_?.ie8.css" } ],
-                [ require("enb/techs/file-copy"), { sourceTarget: "?.ie9.css", destTarget: "_?.ie9.css" } ]
+                [ require("enb/techs/file-copy"), { sourceTarget: "?.js", destTarget: "post.?.js" } ],
+                [ require("enb/techs/file-copy"), { sourceTarget: "?.css", destTarget: "post.?.css" } ],
+                [ require("enb/techs/file-copy"), { sourceTarget: "?.ie6.css", destTarget: "post.?.ie6.css" } ],
+                [ require("enb/techs/file-copy"), { sourceTarget: "?.ie7.css", destTarget: "post.?.ie7.css" } ],
+                [ require("enb/techs/file-copy"), { sourceTarget: "?.ie8.css", destTarget: "post.?.ie8.css" } ],
+                [ require("enb/techs/file-copy"), { sourceTarget: "?.ie9.css", destTarget: "post.?.ie9.css" } ]
             ]);
         });
     });
     config.mode("production", function() {
         config.node("desktop.bundles/index", function(nodeConfig) {
             nodeConfig.addTechs([
-                [ require("enb/techs/borschik"), { sourceTarget: "?.js", destTarget: "_?.js", minify: true, freeze: true } ],
-                [ require("enb/techs/borschik"), { sourceTarget: "?.css", destTarget: "_?.css", minify: true, freeze: true } ],
-                [ require("enb/techs/borschik"), { sourceTarget: "?.ie6.css", destTarget: "_?.ie6.css", minify: true, freeze: true } ],
-                [ require("enb/techs/borschik"), { sourceTarget: "?.ie7.css", destTarget: "_?.ie7.css", minify: true, freeze: true } ],
-                [ require("enb/techs/borschik"), { sourceTarget: "?.ie8.css", destTarget: "_?.ie8.css", minify: true, freeze: true } ],
-                [ require("enb/techs/borschik"), { sourceTarget: "?.ie9.css", destTarget: "_?.ie9.css", minify: true, freeze: true } ]
+                [ require("enb/techs/borschik"), { sourceTarget: "?.js", destTarget: "post.?.js", minify: true, freeze: true } ],
+                [ require("enb/techs/borschik"), { sourceTarget: "?.css", destTarget: "post.?.css", minify: true, freeze: true } ],
+                [ require("enb/techs/borschik"), { sourceTarget: "?.ie6.css", destTarget: "post.?.ie6.css", minify: true, freeze: true } ],
+                [ require("enb/techs/borschik"), { sourceTarget: "?.ie7.css", destTarget: "post.?.ie7.css", minify: true, freeze: true } ],
+                [ require("enb/techs/borschik"), { sourceTarget: "?.ie8.css", destTarget: "post.?.ie8.css", minify: true, freeze: true } ],
+                [ require("enb/techs/borschik"), { sourceTarget: "?.ie9.css", destTarget: "post.?.ie9.css", minify: true, freeze: true } ]
             ]);
         });
     });
@@ -43,7 +43,7 @@ module.exports = function(config) {
             require("enb/techs/deps-old"),
             require("enb/techs/files"),
             [ require('enb-xjst/techs/bemhtml'), { devMode: false } ],
-            [ require("enb/techs/html-from-bemjson"), { destTarget: "_?.html"} ],
+            require("enb/techs/html-from-bemjson"),
             require('enb/techs/js'),
             require("enb/techs/css"),
             [ require("enb/techs/css-ie6"), { sourceSuffixes: ['css', 'ie.css', 'ie6.css'] }],
@@ -51,6 +51,6 @@ module.exports = function(config) {
             [ require("enb/techs/css-ie8"), { sourceSuffixes: ['css', 'ie.css', 'ie8.css'] }],
             [ require("enb/techs/css-ie9"), { sourceSuffixes: ['css', 'ie9.css'] }]
         ]);
-        nodeConfig.addTargets(["?.bemhtml.js", "_?.html", "_?.css", "_?.ie6.css", "_?.ie7.css", "_?.ie8.css", "_?.ie9.css", "_?.js"]);
+        nodeConfig.addTargets(["?.bemhtml.js", "?.html", "post.?.css", "post.?.ie6.css", "post.?.ie7.css", "post.?.ie8.css", "post.?.ie9.css", "post.?.js"]);
     });
 };

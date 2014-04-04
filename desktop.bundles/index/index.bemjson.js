@@ -2,10 +2,10 @@
     block: 'b-page',
     title: 'Instates',
     head: [
-        { elem: 'css', url: './_index.css', ie: false },
-        { elem: 'css', url: './_index', ie: true },
+        { elem: 'css', url: './post.index.css', ie: false },
+        { elem: 'css', url: './post.index', ie: true },
         { elem: 'js', url: '//yandex.st/jquery/1.8.3/jquery.min.js' },
-        { elem: 'js', url: './_index.js' },
+        { elem: 'js', url: './post.index.js' },
         // Это необходимо подключать только тогда, когда у вас используются лайки со счётчиками
         // { elem: 'js', url: '//yandex.st/share/cnt.share.js' },
 
