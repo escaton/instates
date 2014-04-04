@@ -3,7 +3,8 @@ vendors/*
 
 desktop.bundles/*/*
 !desktop.bundles/*/*.bemjson.js
-!desktop.bundles/*/_*
+!desktop.bundles/*/post*
+!desktop.bundles/*/*.html
 
 .enb/tmp/*
 
