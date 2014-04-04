@@ -1,0 +1,16 @@
+{
+    "author": "Egor Blinov <eho31@yandex.ru>",
+    "name": "instates",
+    "private": true,
+    "version": "0.0.1",
+    "dependencies": {
+    },
+    "devDependencies": {
+        "enb": "~0.8.48",
+        "enb-xjst": "~1.0.0",
+        "bower": "~1.2.8"
+    },
+    "engines": {
+        "node": ">= 0.8.0"
+    }
+}

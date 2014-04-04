@@ -1,0 +1,10 @@
+node_modules/
+vendors/*
+
+desktop.bundles/*/*
+!desktop.bundles/*/*.bemjson.js
+
+.enb/tmp
+
+.DS_Store
+._*
