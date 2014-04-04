@@ -4,7 +4,7 @@ vendors/*
 desktop.bundles/*/*
 !desktop.bundles/*/*.bemjson.js
 
-.enb/tmp
+.enb/tmp/*
 
 .DS_Store
 ._*

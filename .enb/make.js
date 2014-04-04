@@ -43,7 +43,7 @@ module.exports = function(config) {
             require("enb/techs/deps-old"),
             require("enb/techs/files"),
             [ require('enb-xjst/techs/bemhtml'), { devMode: false } ],
-            require("enb/techs/html-from-bemjson"),
+            [ require("enb/techs/html-from-bemjson"), { destTarget: "_?.html"} ],
             require('enb/techs/js'),
             require("enb/techs/css"),
             [ require("enb/techs/css-ie6"), { sourceSuffixes: ['css', 'ie.css', 'ie6.css'] }],
@@ -51,6 +51,6 @@ module.exports = function(config) {
             [ require("enb/techs/css-ie8"), { sourceSuffixes: ['css', 'ie.css', 'ie8.css'] }],
             [ require("enb/techs/css-ie9"), { sourceSuffixes: ['css', 'ie9.css'] }]
         ]);
-        nodeConfig.addTargets(["?.bemhtml.js", "?.html", "_?.css", "_?.ie6.css", "_?.ie7.css", "_?.ie8.css", "_?.ie9.css", "_?.js"]);
+        nodeConfig.addTargets(["?.bemhtml.js", "_?.html", "_?.css", "_?.ie6.css", "_?.ie7.css", "_?.ie8.css", "_?.ie9.css", "_?.js"]);
     });
 };
