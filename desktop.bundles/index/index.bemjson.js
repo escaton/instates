@@ -10,7 +10,7 @@
         // { elem: 'js', url: '//yandex.st/share/cnt.share.js' },
 
         // FIXME: незабываем заменить favicon на иконку своего сервиса
-        { elem: 'favicon', url: '//yandex.st/lego/_/pDu9OWAQKB0s2J9IojKpiS_Eho.ico' },
+        // { elem: 'favicon', url: '/www/favicon.ico' },
 
         // FIXME: Меты для поисковой оптимизации
         { elem: 'meta', attrs: { name: 'description', content: '' } },
