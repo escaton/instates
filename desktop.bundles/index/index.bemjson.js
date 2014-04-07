@@ -4,8 +4,8 @@
     head: [
         { elem: 'css', url: './post.index.css', ie: false },
         { elem: 'css', url: './post.index', ie: true },
-        { elem: 'js', url: '//yandex.st/jquery/1.8.3/jquery.min.js' },
-        { elem: 'js', url: './post.index.js' },
+        // { elem: 'js', url: '//yandex.st/jquery/1.8.3/jquery.min.js' },
+        // { elem: 'js', url: './post.index.js' },
         // Это необходимо подключать только тогда, когда у вас используются лайки со счётчиками
         // { elem: 'js', url: '//yandex.st/share/cnt.share.js' },
 
@@ -43,39 +43,7 @@
                     elem: 'p',
                     mix: [{block: 'font', elem: 'capture-it'}],
                     content: [
-                        'Хочешь купить в Америке джинсы',
-                        // {
-                        //     block: 'roulette',
-                        //     content: [
-                        //         {
-                        //             elem: 'wrap',
-                        //             content: [
-                        //                 {
-                        //                     elem: 'item',
-                        //                     content: 'ноутбук'
-                        //                 },
-                        //                 {
-                        //                     elem: 'item',
-                        //                     content: 'сумку'
-                        //                 },
-                        //                 {
-                        //                     elem: 'item',
-                        //                     mods: {state: 'current'},
-                        //                     content: 'джинсы'
-                        //                 },
-                        //                 {
-                        //                     elem: 'item',
-                        //                     content: 'телефон'
-                        //                 },
-                        //                 {
-                        //                     elem: 'item',
-                        //                     content: 'футболку'
-                        //                 }
-                        //             ]
-                        //         }
-                        //     ]
-                        // },
-                        '?'
+                        'Хочешь купить в Америке джинсы?'
                     ]
                 },
                 {
@@ -85,14 +53,14 @@
                         style: 'margin-left:-10px;'
                     },
                     content: [
-                        'Умничка, давно пора!'
+                        'Отличная идея, давно пора!'
                     ]
                 },
                 {
                     elem: 'p',
                     mix: [{block: 'font', elem: 'capture-it'}],
                     content: [
-                        'Пойдем, я тебе всё расскажу ',
+                        'Тебе сюда:',
                     ]
                 },
                 {
@@ -112,6 +80,10 @@
                     ]
                 },
             ]
-        }
+        },
+        {
+            block: 'stripe'
+        },
+        '<script type="text/javascript">(function (d, w, c) {(w[c] = w[c] || []).push(function() {try {w.yaCounter24580112 = new Ya.Metrika({id:24580112,webvisor:true,clickmap:true,trackLinks:true,accurateTrackBounce:true});} catch(e) { }});var n = d.getElementsByTagName("script")[0],s = d.createElement("script"),f = function () { n.parentNode.insertBefore(s, n); };s.type = "text/javascript";s.async = true;s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";if (w.opera == "[object Opera]") {d.addEventListener("DOMContentLoaded", f, false);} else { f(); }})(document, window, "yandex_metrika_callbacks");</script><noscript><div><img src="//mc.yandex.ru/watch/24580112" style="position:absolute; left:-9999px;" alt="" /></div></noscript>'
     ]
 })
