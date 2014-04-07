@@ -1,0 +1,11 @@
+.content {
+    color: #fff;
+    font-size: 40px;
+    line-height: 39px;
+    height: 156px;
+    width: 960px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -78px -480px;
+}

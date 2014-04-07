@@ -1,0 +1,9 @@
+.b-link,
+.b-link:visited,
+.b-link:active {
+    color: #fff;
+}
+
+.b-link:hover {
+    color: #f00;
+}

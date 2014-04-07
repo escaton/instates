@@ -27,6 +27,91 @@
     'x-ua-compatible': 'IE=EmulateIE7, IE=edge',
     js: true,
     content: [
-        'Hello!'
+        {
+            elem: 'section',
+            content: [
+                {
+                    block: 'header'
+                }
+            ]
+        },
+        {
+            block: 'content',
+            mix: [{block: 'b-page', elem: 'section'}],
+            content: [
+                {
+                    elem: 'p',
+                    mix: [{block: 'font', elem: 'capture-it'}],
+                    content: [
+                        'Хочешь купить в Америке джинсы',
+                        // {
+                        //     block: 'roulette',
+                        //     content: [
+                        //         {
+                        //             elem: 'wrap',
+                        //             content: [
+                        //                 {
+                        //                     elem: 'item',
+                        //                     content: 'ноутбук'
+                        //                 },
+                        //                 {
+                        //                     elem: 'item',
+                        //                     content: 'сумку'
+                        //                 },
+                        //                 {
+                        //                     elem: 'item',
+                        //                     mods: {state: 'current'},
+                        //                     content: 'джинсы'
+                        //                 },
+                        //                 {
+                        //                     elem: 'item',
+                        //                     content: 'телефон'
+                        //                 },
+                        //                 {
+                        //                     elem: 'item',
+                        //                     content: 'футболку'
+                        //                 }
+                        //             ]
+                        //         }
+                        //     ]
+                        // },
+                        '?'
+                    ]
+                },
+                {
+                    elem: 'p',
+                    mix: [{block: 'font', elem: 'capture-it'}],
+                    attrs: {
+                        style: 'margin-left:-10px;'
+                    },
+                    content: [
+                        'Умничка, давно пора!'
+                    ]
+                },
+                {
+                    elem: 'p',
+                    mix: [{block: 'font', elem: 'capture-it'}],
+                    content: [
+                        'Пойдем, я тебе всё расскажу ',
+                    ]
+                },
+                {
+                    elem: 'p',
+                    mix: [{block: 'font', elem: 'capture-it'}],
+                    attrs: {
+                        style: 'margin-left:70px;'
+                    },
+                    content: [
+                        {
+                            block: 'b-link',
+                            url: 'https://vk.com/instates',
+                            target: '_blank',
+                            title: 'vk.com/instates',
+                            content: 'vk.com/instates'
+                        }
+                    ]
+                },
+            ]
+        }
     ]
 })

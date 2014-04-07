@@ -1,0 +1,7 @@
+.roulette__item {
+    opacity: 0.5;
+}
+
+.roulette__item_state_current {
+    opacity: 1;
+}
