@@ -8,6 +8,7 @@ deps::
 
 release-www::
 	git co gh-pages
+	git merge master
 	YENV=production $(BIN)/enb make -n
 	git add ./
 	git ci -m 'release'
