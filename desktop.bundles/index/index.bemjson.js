@@ -13,7 +13,7 @@
         // { elem: 'favicon', url: '/www/favicon.ico' },
 
         // FIXME: Меты для поисковой оптимизации
-        { elem: 'meta', attrs: { name: 'description', content: '' } },
+        { elem: 'meta', attrs: { name: 'description', content: 'Доставка товаров из америки. Покупки в америке. Американсие магазины. Доставка из америки.' } },
         { elem: 'meta', attrs: { name: 'keywords', content: '' } },
 
         // FIXME: Меты OpenGraph протокола http://developers.facebook.com/docs/opengraph/
@@ -66,7 +66,6 @@
                                 'игрушки',
                                 'удочку',
                                 'сноуборд',
-                                'угги',
                                 'сапоги',
                                 'пальто',
                                 'куртку',
