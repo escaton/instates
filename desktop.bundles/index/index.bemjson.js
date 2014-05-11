@@ -4,8 +4,8 @@
     head: [
         { elem: 'css', url: './post.index.css', ie: false },
         { elem: 'css', url: './post.index', ie: true },
-        // { elem: 'js', url: '//yandex.st/jquery/1.8.3/jquery.min.js' },
-        // { elem: 'js', url: './post.index.js' },
+        { elem: 'js', url: '//yandex.st/jquery/1.8.3/jquery.min.js' },
+        { elem: 'js', url: './post.index.js' },
         // Это необходимо подключать только тогда, когда у вас используются лайки со счётчиками
         // { elem: 'js', url: '//yandex.st/share/cnt.share.js' },
 
@@ -43,14 +43,51 @@
                     elem: 'p',
                     mix: [{block: 'font', elem: 'capture-it'}],
                     content: [
-                        'Хочешь купить в Америке джинсы?'
+                        'Хочешь купить в Америке ',
+                        {
+                            elem: 'variant',
+                            content: [
+                                'джинсы',
+                                'сумку',
+                                'купальник',
+                                'пылесос',
+                                'помаду',
+                                'тушь',
+                                'тени',
+                                'ноутбук',
+                                'кросовки',
+                                'туфли',
+                                'телефон',
+                                'нижнее белье',
+                                'iPhone',
+                                'книгу',
+                                'календарь',
+                                'детские вещи',
+                                'игрушки',
+                                'удочку',
+                                'сноуборд',
+                                'угги',
+                                'сапоги',
+                                'пальто',
+                                'куртку',
+                                'свитер',
+                                'рубашку',
+                                'футболку',
+                                'ремень',
+                                'галстук',
+                                'часы',
+                                'украшения',
+                                'платье'
+                            ]
+                        },
+                        '?'
                     ]
                 },
                 {
                     elem: 'p',
                     mix: [{block: 'font', elem: 'capture-it'}],
                     attrs: {
-                        style: 'margin-left:-10px;'
+                        style: 'margin-left:-19px;'
                     },
                     content: [
                         'Отличная идея, давно пора!'

@@ -1,0 +1,11 @@
+.content__variant {
+    position: relative;
+    display: inline-block;
+    height: 34px;
+    perspective: 100px;
+    -webkit-transition: width .3s ease;
+       -moz-transition: width .3s ease;
+        -ms-transition: width .3s ease;
+         -o-transition: width .3s ease;
+            transition: width .3s ease;
+}

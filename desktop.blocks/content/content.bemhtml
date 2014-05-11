@@ -1,0 +1,14 @@
+block content {
+
+    js: true
+
+    elem variant {
+
+        content: this.ctx.content.map(function(item) {
+            return {
+                elem: 'variant-item',
+                content: item
+            }
+        })
+    }
+}

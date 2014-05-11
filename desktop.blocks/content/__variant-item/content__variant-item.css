@@ -1,0 +1,12 @@
+.content__variant-item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    white-space: nowrap;
+
+    -webkit-transition: .3s ease;
+       -moz-transition: .3s ease;
+        -ms-transition: .3s ease;
+         -o-transition: .3s ease;
+            transition: .3s ease;
+}
