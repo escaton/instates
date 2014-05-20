@@ -1,6 +1,6 @@
 ({
     block: 'b-page',
-    title: 'Instates',
+    title: 'Instates. Покупка и доставка из США. Одежда, электроника, косметика.',
     head: [
         { elem: 'css', url: './post.index.css', ie: false },
         { elem: 'css', url: './post.index', ie: true },
@@ -13,13 +13,13 @@
         // { elem: 'favicon', url: '/www/favicon.ico' },
 
         // FIXME: Меты для поисковой оптимизации
-        { elem: 'meta', attrs: { name: 'description', content: 'Доставка товаров из америки. Покупки в америке. Американсие магазины. Доставка из америки.' } },
+        { elem: 'meta', attrs: { name: 'description', content: 'Покупка одежды, обуви, электроники, негабаритных товаров во всех магазинах Америки по низкой цене! Объединение товаров в одну посылку. Доставка по России до квартиры от 300 рублей за 1 кг.' } },
         { elem: 'meta', attrs: { name: 'keywords', content: '' } },
 
         // FIXME: Меты OpenGraph протокола http://developers.facebook.com/docs/opengraph/
-        { elem: 'meta', attrs: { property: 'og:title', content: '' } },
-        { elem: 'meta', attrs: { property: 'og:description', content: '' } },
-        { elem: 'meta', attrs: { property: 'og:image', content: '' } },
+        { elem: 'meta', attrs: { property: 'og:title', content: 'Покупка и доставка из США. Одежда, электроника, косметика.' } },
+        { elem: 'meta', attrs: { property: 'og:description', content: 'Покупка одежды, обуви, электроники, негабаритных товаров во всех магазинах Америки по низкой цене! Объединение товаров в одну посылку. Доставка по России до квартиры от 300 рублей за 1 кг.' } },
+        { elem: 'meta', attrs: { property: 'og:image', content: 'http://instates.ru/www/share.jpg' } },
         { elem: 'meta', attrs: { property: 'og:type', content: 'website' } }
     ],
 
